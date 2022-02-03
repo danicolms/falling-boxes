@@ -3,11 +3,11 @@ import { useFrame } from "@react-three/fiber";
 import Tag from "../Tag";
 import Box from "../Box";
 
-const BoxGroup = () => {
+const BoxGroup = ({ yCoordinate }) => {
   const groupRef = useRef();
 
   useFrame(() => {
-    groupRef.current.rotation.y += 0.02;
+    groupRef.current.rotation.y += yCoordinate / 3000;
   });
 
   return (

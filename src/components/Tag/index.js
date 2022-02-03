@@ -24,7 +24,7 @@ const Tag = ({ color, pos }) => {
     <mesh
       ref={tagRef}
       position={[
-        getRandomPositionCoordinate(2),
+        getRandomPositionCoordinate(1),
         getRandomPositionCoordinate(3),
         1,
       ]}
