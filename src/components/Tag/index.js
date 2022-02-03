@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
-
+import { getRandomPositionCoordinate, getRandomSize } from "../../utils";
 const Tag = ({ color, pos }) => {
   const tagRef = useRef();
 
@@ -14,11 +14,6 @@ const Tag = ({ color, pos }) => {
       process.env.PUBLIC_URL + "/Paper003_1K_Roughness.jpg",
     ]
   );
-
-  const getRandomPositionCoordinate = (range) =>
-    (Math.floor(Math.random() * range * 2) - range) / 10;
-
-  const getRandomSize = () => (Math.floor(Math.random() * 15) + 1) / 10;
 
   return (
     <mesh
@@ -35,7 +30,6 @@ const Tag = ({ color, pos }) => {
       />
       <meshStandardMaterial
         map={colorMap}
-        // displacementMap={displacementMap}
         normalMap={normalMap}
         roughnessMap={roughnessMap}
         aoMap={aoMap}

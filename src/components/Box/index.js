@@ -11,7 +11,6 @@ const Box = () => {
       process.env.PUBLIC_URL + "/Cardboard001_1K_Displacement.jpg",
       process.env.PUBLIC_URL + "/Cardboard001_1K_NormalGL.jpg",
       process.env.PUBLIC_URL + "/Cardboard001_1K_Roughness.jpg",
- 
     ]
   );
 
@@ -20,11 +19,10 @@ const Box = () => {
       <boxBufferGeometry attach="geometry" args={[2, 2, 2]} />
       <meshStandardMaterial
         map={colorMap}
-        // displacementMap={displacementMap}
         normalMap={normalMap}
         roughnessMap={roughnessMap}
         aoMap={aoMap}
-        color="#654321"
+        color="#855e38"
       />
     </mesh>
   );
