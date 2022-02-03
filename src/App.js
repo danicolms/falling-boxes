@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, Suspense } from "react";
 import { Canvas, useFrame, extend, useThree } from "@react-three/fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import BoxGroup from "./components/BoxGroup";
@@ -24,10 +24,12 @@ function App() {
         <h5 className="subtitle">by @danicolms</h5>
       </div>
       <Canvas>
-        {/* <CameraControls /> */}
-        <ambientLight />
-        <pointLight position={[5, 5, 5]} />
-        <BoxGroup />
+        <Suspense fallback={null}>
+          {/* <CameraControls /> */}
+          <ambientLight />
+          <pointLight position={[5, 5, 5]} />
+          <BoxGroup />
+        </Suspense>
       </Canvas>
     </div>
   );

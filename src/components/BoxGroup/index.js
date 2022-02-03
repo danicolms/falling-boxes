@@ -13,7 +13,9 @@ const BoxGroup = () => {
   return (
     <group ref={groupRef}>
       <Box />
-      <Tag color="yellow" />
+      <Tag color="yellow" pos={1} />
+      <Tag color="lightsalmon" pos={2} />
+      <Tag color="white" pos={3} />
     </group>
   );
 };
