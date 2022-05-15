@@ -28,14 +28,14 @@ function App() {
       }}
     >
       <div className="textContainer">
-        <h1 className="title">Rotating box</h1>
-        <h5 className="subtitle">by @danicolms</h5>
+        <h1 className="title">La caja</h1>
+        <h5 className="subtitle">@danicolms</h5>
         <span className="caption">
-          {" "}
+       
           (
      
-          Move your mouse around
-          
+          Mueve el mouse
+          {" "}   {" "}
           <BsFillMouseFill />)
         </span>
       </div>
