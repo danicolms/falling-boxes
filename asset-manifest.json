@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/rotating-box/static/css/main.7945aec5.css",
-    "main.js": "/rotating-box/static/js/main.757bbbdd.js",
+    "main.js": "/rotating-box/static/js/main.c74de2d4.js",
     "static/js/787.1ff6a4a6.chunk.js": "/rotating-box/static/js/787.1ff6a4a6.chunk.js",
     "index.html": "/rotating-box/index.html",
     "static/media/noise.svg": "/rotating-box/static/media/noise.b9ccb2d024bfc2eb61e2.svg",
     "main.7945aec5.css.map": "/rotating-box/static/css/main.7945aec5.css.map",
-    "main.757bbbdd.js.map": "/rotating-box/static/js/main.757bbbdd.js.map",
+    "main.c74de2d4.js.map": "/rotating-box/static/js/main.c74de2d4.js.map",
     "787.1ff6a4a6.chunk.js.map": "/rotating-box/static/js/787.1ff6a4a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7945aec5.css",
-    "static/js/main.757bbbdd.js"
+    "static/js/main.c74de2d4.js"
   ]
 }
