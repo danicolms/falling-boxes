@@ -20,6 +20,7 @@ extend({ OrbitControls });
 //   return <orbitControls ref={controls} args={[camera, domElement]} />;
 // };
 
+console.log("💡 Running v2.0.2");
 function App() {
   const [yCoordinate, setYCoordinate] = useState(200);
   return (
