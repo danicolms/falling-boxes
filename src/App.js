@@ -3,7 +3,9 @@ import { Canvas, useFrame, extend, useThree } from "@react-three/fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import BoxGroup from "./components/BoxGroup";
 import { BsFillMouseFill } from "react-icons/bs";
+import Fade from 'react-reveal/Fade';
 import "./styles.css";
+import Box from "./components/Box";
 extend({ OrbitControls });
 
 // Moving camera for developing.
@@ -21,6 +23,7 @@ extend({ OrbitControls });
 function App() {
   const [yCoordinate, setYCoordinate] = useState(200);
   return (
+
     <div
       className="container"
       onMouseMove={(e) => {
@@ -28,26 +31,35 @@ function App() {
       }}
     >
       <div className="textContainer">
-        <h1 className="title">La caja</h1>
-        <h5 className="subtitle">@danicolms</h5>
-        <span className="caption">
-       
-          (
-     
-          Mueve el mouse
-          {" "}   {" "}
-          <BsFillMouseFill />)
-        </span>
+        <Fade bottom>
+          <h1 className="title">Rotating box</h1>
+          <h5 className="subtitle">@danicolms</h5>
+          <span className="caption">
+
+            (
+
+            Move your mouse
+            <BsFillMouseFill />)
+          </span>
+        </Fade>
       </div>
+
       <Canvas>
-        <Suspense fallback={null}>
+
+        <Suspense fallback>
           {/* <CameraControls /> */}
           <ambientLight />
           <pointLight position={[5, 5, 5]} />
+
+
           <BoxGroup yCoordinate={yCoordinate} />
+
         </Suspense>
+
       </Canvas>
+
     </div>
+
   );
 }
 
